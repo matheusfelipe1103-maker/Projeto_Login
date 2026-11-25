@@ -1,0 +1,294 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+
+    background:
+        radial-gradient(circle at top left, #193b4b, transparent 40%),
+        linear-gradient(135deg, #101827, #17283c);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #f4f7fb;
+}
+
+.pagina {
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+}
+
+.login-card {
+    width: 100%;
+    max-width: 420px;
+
+    background: #182438;
+
+    padding: 40px;
+
+    border-radius: 22px;
+
+    border: 1px solid #34445b;
+
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+}
+
+.logo {
+    width: 55px;
+    height: 55px;
+
+    background: #39d6c2;
+
+    color: #10252b;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 15px;
+
+    font-size: 26px;
+    font-weight: bold;
+
+    margin-bottom: 25px;
+}
+
+.eyebrow {
+    color: #39d6c2;
+
+    font-size: 11px;
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.subtitulo {
+    color: #a8b4c7;
+
+    font-size: 14px;
+
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+.grupo-input {
+    margin-bottom: 22px;
+}
+
+.grupo-input label {
+    display: block;
+
+    margin-bottom: 9px;
+
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.grupo-input input {
+    width: 100%;
+    height: 50px;
+
+    padding: 0 15px;
+
+    background: #111c2d;
+
+    border: 1px solid #34445b;
+    border-radius: 10px;
+
+    color: white;
+
+    outline: none;
+
+    font-size: 14px;
+
+    transition: 0.3s;
+}
+
+.grupo-input input:focus {
+    border-color: #39d6c2;
+
+    box-shadow: 0 0 0 3px rgba(57, 214, 194, 0.15);
+}
+
+.grupo-input input::placeholder {
+    color: #77869c;
+}
+
+.campo-senha {
+    position: relative;
+}
+
+.campo-senha input {
+    padding-right: 85px;
+}
+
+#mostrar-senha {
+    position: absolute;
+
+    right: 10px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    background: transparent;
+    border: none;
+
+    color: #39d6c2;
+
+    cursor: pointer;
+
+    font-weight: bold;
+}
+
+.opcoes {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 10px;
+
+    margin: 20px 0 25px;
+
+    font-size: 12px;
+}
+
+.lembrar {
+    color: #a8b4c7;
+
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.lembrar input {
+    accent-color: #39d6c2;
+}
+
+.opcoes a {
+    color: #39d6c2;
+
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.opcoes a:hover {
+    text-decoration: underline;
+}
+
+.botao-entrar {
+    width: 100%;
+    height: 52px;
+
+    background: #39d6c2;
+
+    border: none;
+    border-radius: 10px;
+
+    color: #10252b;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.botao-entrar:hover {
+    background: #5ce6d4;
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 8px 20px rgba(57, 214, 194, 0.2);
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible {
+    outline: 3px solid white;
+    outline-offset: 3px;
+}
+
+#mensagem {
+    color: #ff8e8e;
+
+    font-size: 12px;
+    text-align: center;
+
+    margin-top: 12px;
+}
+
+.separador {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    margin: 25px 0 18px;
+
+    color: #7f8da2;
+
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.separador::before,
+.separador::after {
+    content: "";
+
+    flex: 1;
+
+    height: 1px;
+
+    background: #34445b;
+}
+
+.rodape {
+    color: #a8b4c7;
+
+    font-size: 12px;
+
+    text-align: center;
+}
+
+@media (max-width: 480px) {
+
+    .login-card {
+        padding: 28px 22px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    .opcoes {
+        flex-wrap: wrap;
+    }
+
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        transition: none !important;
+    }
+}

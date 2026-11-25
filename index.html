@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Entrar | Meu Sistema</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <main class="pagina">
+
+        <section class="login-card">
+
+            <div class="logo">M</div>
+
+            <p class="eyebrow">BEM-VINDO DE VOLTA</p>
+
+            <h1>Acesse sua conta</h1>
+
+            <p class="subtitulo">
+                Entre com seus dados para continuar.
+            </p>
+
+            <form id="form-login">
+
+                <div class="grupo-input">
+                    <label for="email">E-mail</label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="voce@exemplo.com"
+                        autocomplete="username"
+                        required
+                    >
+                </div>
+
+                <div class="grupo-input">
+                    <label for="senha">Senha</label>
+
+                    <div class="campo-senha">
+                        <input
+                            type="password"
+                            id="senha"
+                            placeholder="Digite sua senha"
+                            autocomplete="current-password"
+                            required
+                        >
+
+                        <button
+                            type="button"
+                            id="mostrar-senha">
+                            Mostrar
+                        </button>
+                    </div>
+                </div>
+
+                <div class="opcoes">
+
+                    <label class="lembrar">
+                        <input type="checkbox">
+                        Manter conectado
+                    </label>
+
+                    <a href="#" id="recuperar">
+                        Esqueceu a senha?
+                    </a>
+
+                </div>
+
+                <button type="submit" class="botao-entrar">
+                    Entrar na conta →
+                </button>
+
+                <p id="mensagem"></p>
+
+            </form>
+
+            <div class="separador">
+                ACESSO PROTEGIDO
+            </div>
+
+            <p class="rodape">
+                Acesso simples, rápido e seguro.
+            </p>
+
+        </section>
+
+    </main>
+
+</body>
+</html>
